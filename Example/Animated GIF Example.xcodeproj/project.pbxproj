@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D7503AE1DC730D600725067 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7503AD1DC730D600725067 /* main.m */; };
 		F82E75AF18ABDC4E002D596E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82E75AE18ABDC4E002D596E /* Foundation.framework */; };
 		F82E75B118ABDC4E002D596E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82E75B018ABDC4E002D596E /* CoreGraphics.framework */; };
 		F82E75B318ABDC4E002D596E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82E75B218ABDC4E002D596E /* UIKit.framework */; };
@@ -20,7 +21,21 @@
 		F862CE2918E1F7AB00DC750D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F862CE2818E1F7AB00DC750D /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0D7503A91DC730D600725067 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0D7503AB1DC730D600725067 /* img2gif */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = img2gif; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D7503AD1DC730D600725067 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F82E75AB18ABDC4E002D596E /* Animated GIF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animated GIF.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82E75AE18ABDC4E002D596E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F82E75B018ABDC4E002D596E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -40,6 +55,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0D7503A81DC730D600725067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F82E75A818ABDC4E002D596E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,10 +77,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D7503AC1DC730D600725067 /* img2gif */ = {
+			isa = PBXGroup;
+			children = (
+				0D7503AD1DC730D600725067 /* main.m */,
+			);
+			path = img2gif;
+			sourceTree = "<group>";
+		};
 		F82E75A218ABDC4E002D596E = {
 			isa = PBXGroup;
 			children = (
 				F82E75B418ABDC4E002D596E /* Animated GIF Example */,
+				0D7503AC1DC730D600725067 /* img2gif */,
 				F82E75AD18ABDC4E002D596E /* Frameworks */,
 				F82E75AC18ABDC4E002D596E /* Products */,
 				F82E75DD18ABDC57002D596E /* Vendor */,
@@ -69,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				F82E75AB18ABDC4E002D596E /* Animated GIF.app */,
+				0D7503AB1DC730D600725067 /* img2gif */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +162,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0D7503AA1DC730D600725067 /* img2gif */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D7503B11DC730D600725067 /* Build configuration list for PBXNativeTarget "img2gif" */;
+			buildPhases = (
+				0D7503A71DC730D600725067 /* Sources */,
+				0D7503A81DC730D600725067 /* Frameworks */,
+				0D7503A91DC730D600725067 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = img2gif;
+			productName = img2gif;
+			productReference = 0D7503AB1DC730D600725067 /* img2gif */;
+			productType = "com.apple.product-type.tool";
+		};
 		F82E75AA18ABDC4E002D596E /* Animated GIF Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F82E75D718ABDC4E002D596E /* Build configuration list for PBXNativeTarget "Animated GIF Example" */;
@@ -155,6 +204,13 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Mattt Thompson";
+				TargetAttributes = {
+					0D7503AA1DC730D600725067 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = YN38FGU2GJ;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = F82E75A618ABDC4E002D596E /* Build configuration list for PBXProject "Animated GIF Example" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -169,6 +225,7 @@
 			projectRoot = "";
 			targets = (
 				F82E75AA18ABDC4E002D596E /* Animated GIF Example */,
+				0D7503AA1DC730D600725067 /* img2gif */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +244,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0D7503A71DC730D600725067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D7503AE1DC730D600725067 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F82E75A718ABDC4E002D596E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,6 +276,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0D7503AF1DC730D600725067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = YN38FGU2GJ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0D7503B01DC730D600725067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YN38FGU2GJ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		F82E75D518ABDC4E002D596E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -314,6 +425,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0D7503B11DC730D600725067 /* Build configuration list for PBXNativeTarget "img2gif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D7503AF1DC730D600725067 /* Debug */,
+				0D7503B01DC730D600725067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F82E75A618ABDC4E002D596E /* Build configuration list for PBXProject "Animated GIF Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
