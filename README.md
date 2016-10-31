@@ -1,41 +1,10 @@
-AnimatedGIFImageSerialization
-=============================
+#说明
 
-`AnimatedGIFImageSerialization` decodes an `UIImage` from [Animated GIFs](http://en.wikipedia.org/wiki/Graphics_Interchange_Format) image data, following the API conventions of Foundation's `NSJSONSerialization` class.
+Fork 自 https://github.com/mattt/AnimatedGIFImageSerialization
 
-As it ships with iOS, `UIImage` does not support decoding animated gifs into an animated `UIImage`. But so long as `ANIMATED_GIF_NO_UIIMAGE_INITIALIZER_SWIZZLING` is not `#define`'d, the this library will swizzle the `UIImage` initializers to automatically support animated GIFs.
+添加了img2gif命令行程序。
 
-## Usage
+使用方法为`img2gif -e *.png`，然后输出到当前目录1.gif
 
-### Decoding
+本打算支持-d，但发现Mac库和iOS库方法不一样，不能直接用。
 
-```objective-c
-UIImageView *imageView = ...;
-imageView.image = [UIImage imageNamed:@"animated.gif"];
-```
-
-![Animated GIF](https://raw.githubusercontent.com/mattt/AnimatedGIFImageSerialization/master/Example/Animated%20GIF%20Example/animated.gif)
-
-### Encoding
-
-```objective-c
-UIImage *image = ...;
-NSData *data = [AnimatedGIFImageSerialization animatedGIFDataWithImage:image
-                                                              duration:1.0
-                                                             loopCount:1
-                                                                 error:nil];
-```
-
----
-
-## Contact
-
-Mattt Thompson
-
-- http://github.com/mattt
-- http://twitter.com/mattt
-- m@mattt.me
-
-## License
-
-AnimatedGIFImageSerialization is available under the MIT license. See the LICENSE file for more info.
